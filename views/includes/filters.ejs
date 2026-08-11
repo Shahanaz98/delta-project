@@ -1,0 +1,53 @@
+<style>
+    #filters{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 15px;
+        gap: 40px;
+    }
+.filter{
+    text-align: center;
+    opacity: 0.7;
+    cursor: pointer;
+    color:#717171;
+    transition:.2s;
+
+}
+.filter:hover{
+    opacity: 1;
+    transform:translateY(-2px);
+    color:black;
+}
+.filter p{
+    margin: 0;
+    font-size: 14px;
+}
+.active{
+    color:black;
+    font-weight:600;
+    border-bottom: 2px solid black;
+}
+
+
+</style>
+
+
+<div id="filters">
+    <div class="filter active">
+        🌍
+        <p >All</p>
+    </div>
+    <div class="filter">
+          🏠
+        <p>Homes</p>
+    </div>
+    <div class="filter">
+        🎈
+        <p>Experiences</p>
+    </div>
+    <div class="filter">
+         🛎️
+        <p>Services</p>
+    </div>
+</div>

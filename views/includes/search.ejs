@@ -1,0 +1,77 @@
+<style>
+    #search-box{
+        width: 70%;
+        margin: 25px auto;
+       
+
+        display:flex;
+        align-items: center;
+        background-color: white;
+        border-radius: 50px;
+        padding: 12px 20px;
+        box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.15);
+    }
+    .search-item{
+        flex: 1;
+         margin-left: 1rem;
+    }
+    #search-box:hover{
+        box-shadow:0 6px 20px rgba(0,0,0,.18);
+
+    }
+.search-item h6{
+    border: 0;
+    font-weight: 600;
+    font-size: 15px;
+}
+.search-item p{
+    color: grey;
+    margin: 0;
+}
+.divider{
+    background: #ddd;
+    height: 50px;
+    width: 1px;
+    
+}
+.search-btn{
+    width: 48px;
+    height: 48px;
+    border-radius:50%;
+    background:#ff385c;
+    color:white;
+    font-size:20px;
+    transition:.3s;
+}
+.search-btn:hover{
+    background:#e31c5f;
+    transform:scale(1.05);
+}
+
+
+</style>
+
+
+
+<div id="search-box">
+    <div class="search-item">
+        <h6>Where</h6>
+        <p>Search destinations</p>
+    </div>
+    <div class="divider"></div>
+    <div class="search-item">
+        <h6>When</h6>
+        <p>Add dates</p>
+    </div>
+    <div class="divider"></div>
+    <div class="search-item">
+        <h6>Who</h6>
+        <p>Add guests</p>
+        
+    </div>
+    <button class="search-btn">
+        <i class="fa-solid fa-magnifying-glass"></i>
+    </button>
+    
+
+</div>

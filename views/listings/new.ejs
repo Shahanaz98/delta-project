@@ -1,0 +1,58 @@
+<%- layout("/layouts/boilerplate")%>
+<body>
+</br></br>
+    <h3 class="offset-2">Create a new listing</h3>
+    <div class="row offset-2 ">
+        <div class="col-8">
+    <form method="POST" action ="/listings" class="needs-validation" novalidate  enctype="multipart/form-data">
+    <div class="mb-3">
+        <label for="title" class="form-label">Title</label>
+        <input name="listing[title]" placeholder="enter a catchy title" type="text" class="form-control" required/>
+        <div class="valid-feedback">Title is valid!</div>
+     </div>
+   
+    <div class="mb-3">
+         <label for="description" class="form-label">Description</label>
+        <textarea name="listing[description]" placeholder ="enter description" class="form-control" required></textarea>
+        <div class = "invalid-feedback">Please enter a short description.</div>
+    </div>
+  
+   
+
+    
+    <div class="mb-3">
+        <label for="image" class="form-label">Upload Listing Image</label>
+        <input name="listing[image]"  type="file" class="form-control"/>
+        <!-- <input name="listing[image]" placeholder="enter image url" type="text" class="form-control"/> -->
+    </div>
+
+    <div class="mb-3">
+        <label for="location" class="form-label">Location</label>
+        <input  type="text" name="listing[location]" placeholder="Hyderabad Telangana" class="form-control" required/>
+        <div class="invalid-feedback">Please enter a valid location.</div>
+        
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="mb-3">
+            <label for="price" class="form-label">Price</label>
+        <input  type="number" name="listing[price]" placeholder="1500" class="form-control" required />
+        <div class="invalid-feedback">Please enter a valid price.</div>
+        
+    </div>
+ </div>
+        <div class="col-md-8">
+            <div class="mb-3">
+        <label for="country" class="form-label">Country</label>
+        <input  type="text" name="listing[country]" placeholder="India" class="form-control" required/>
+        <div class ="invalid-feedback">enter valid country</div>
+    </div>
+
+        </div>
+    </div>
+    <button class="btn btn-dark add-btn">Add</button>
+    </br></br>
+    </form>
+    </div>
+    </div>
+    
