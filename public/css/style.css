@@ -181,6 +181,9 @@ body {
         gap: 10px;
         margin-left: 0 !important;
     }
+    .edit-btn {
+        width: 100%;
+    }
 
     .btns form {
         margin: 0;
