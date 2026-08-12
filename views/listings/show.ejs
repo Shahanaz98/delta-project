@@ -5,7 +5,7 @@
       <h2><b><%= listing.title %></b></h2>
     </div>
      <div class="col-12 col-md-8 offset-md-2">
-      <div class="card" card-show>
+      <div class="card card-show">
         <img
           src="<%= listing.image.url %>"
           class="card-img-top show-img"
@@ -28,12 +28,12 @@
         >Edit
       </a>
       <form method="POST" action="/listings/<%=listing._id%>?_method=DELETE">
-        <button class="btn btn-dark  offset-5" >Delete</button>
+        <button class="btn btn-dark  " >Delete</button>
       </form>
     </div>
     <% } %>
   
-    <div class="col-8 offset-3 mb-3">
+    <div class="col-12 col-md-8 offset-md-2 mb-3">
 
       <hr />
       <% if(currUser){ %>
@@ -81,7 +81,7 @@
        <% } %>
       <div class="row">
       <% for( let review of listing.reviews){ %>
-       <div class="card col-5 ms-3 mb-3 review-card">
+       <div class="card col-12 col-md-5 mb-3 review-card">
         <div class="card-body">
           <h5 class="card-title"><%= review.author.username %></h5>
           <p class="starability-result card-text" data-rating="<%= review.rating%>"stars></p>
