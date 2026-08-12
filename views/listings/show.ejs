@@ -5,7 +5,7 @@
       <h2><b><%= listing.title %></b></h2>
     </div>
     <div class="col-6 offset-3">
-      <div class="card" style="width: 70%">
+      <div class="card" card-show>
         <img
           src="<%= listing.image.url %>"
           class="card-img-top show-img"
@@ -81,7 +81,7 @@
        <% } %>
       <div class="row">
       <% for( let review of listing.reviews){ %>
-       <div class="card col-5 ms-3 mb-3">
+       <div class="card col-5 ms-3 mb-3 review-card">
         <div class="card-body">
           <h5 class="card-title"><%= review.author.username %></h5>
           <p class="starability-result card-text" data-rating="<%= review.rating%>"stars></p>

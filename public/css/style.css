@@ -154,46 +154,40 @@ body {
     .card-img-top {
         height: 15rem;
     }
-   }
+}
+   
    /*show page*/
-    @media (max-width: 576px) {
-        /*listing-title*/
-     .col-8.offset-3{
-        margin-left: 0 !important;
-        width: 100% !important; 
-     }
-     /*listing-img-card*/
-     .col-6 offset-3{
-        margin-left: 0 !important;
-        width: 100% !important; 
-     }
-     .col-6 offset-3 .card{
-        width: 100%;
-     }
-     /*listing-img*/
-     .show-img{
-        width: 100% !important;
-        height: 250px !important;
-        object-fit: cover !important;
-     }
-     /*edit and delete btns*/
-     .btns{
-        display: flex;
-        gap: 10px;
-        margin-left: 0 !important;
-     }
-     .btns .edit-btn {
-        width: auto !important;
-        margin-left: 0 !important;
-     }
-     /*review section*/
-     .col-8.offset-3{
-        margin-left: 0 !important;
-        width: 100% !important; 
-     }
-     /*text Area*/
-      textarea {
+    
+      /* Show page */
+
+.show-img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+@media (max-width: 576px) {
+
+    .show-img {
+        height: 250px;
+    }
+
+    .show-card {
         width: 100%;
     }
 
+    .btns {
+        display: flex;
+        gap: 10px;
+        margin-left: 0 !important;
     }
+
+    .btns form {
+        margin: 0;
+    }
+
+    .review-card {
+        width: 100%;
+        margin-left: 0 !important;
+    }
+}
