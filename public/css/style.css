@@ -126,7 +126,7 @@ body {
 
 /*Mobile view*/
 /*Navbar*/
-@media (max-width: 768px) {
+
     .navbar{
         padding: 10px 15px !important;
     }
@@ -148,4 +148,52 @@ body {
     }
     .navbar-nav .ms-auto{
         margin-left: 0 !important;
+    }
+    /*index page*/
+    @media (max-width: 576px) {
+    .card-img-top {
+        height: 15rem;
+    }
+   }
+   /*show page*/
+    @media (max-width: 576px) {
+        /*listing-title*/
+     .col-8.offset-3{
+        margin-left: 0 !important;
+        width: 100% !important; 
+     }
+     /*listing-img-card*/
+     .col-6 offset-3{
+        margin-left: 0 !important;
+        width: 100% !important; 
+     }
+     .col-6 offset-3 .card{
+        width: 100%;
+     }
+     /*listing-img*/
+     .show-img{
+        width: 100% !important;
+        height: 250px !important;
+        object-fit: cover !important;
+     }
+     /*edit and delete btns*/
+     .btns{
+        display: flex;
+        gap: 10px;
+        margin-left: 0 !important;
+     }
+     .btns .edit-btn {
+        width: auto !important;
+        margin-left: 0 !important;
+     }
+     /*review section*/
+     .col-8.offset-3{
+        margin-left: 0 !important;
+        width: 100% !important; 
+     }
+     /*text Area*/
+      textarea {
+        width: 100%;
+    }
+
     }
