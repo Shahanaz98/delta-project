@@ -228,6 +228,20 @@ body {
     .form-control{
     width: 100% !important;
     }
+    .edit-listing{
+        margin-left: 0 !important;
+        padding: 0 15px;
+    }
+    .edit-listing-form{
+        margin-left: 0 !important;
+    }
+    .form-control{
+        width: 100% !important;
+    }
+    .add-btn{
+        width: 100% !important;
+    }
+
 
 
 
