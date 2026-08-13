@@ -169,11 +169,14 @@ body {
 @media (max-width: 576px) {
 
     .show-img {
-        height: 220px;
+        height: 220px !important;
+        width: 100% !important;
+        object-fit: cover !important;
+        display: block !important;
     }
 
     .card-show {
-        width: 100%;
+        width: 100% !important;
     }
 
     .btns {
@@ -182,18 +185,18 @@ body {
         margin-left: 0 !important;
     }
     .edit-btn {
-        width: 100%;
+        width: 100% !important;
     }
 
     .btns form {
-        margin: 0;
+        margin: 0 !important;
     }
     .btns form button {
-        width: 100%;
+        width: 100% !important;
     }
 
     .review-card {
-        width: 100%;
+        width: 100% !important;
         margin-left: 0 !important;
     }
 }
