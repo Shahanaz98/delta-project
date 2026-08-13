@@ -172,7 +172,7 @@ body {
         height: 220px;
     }
 
-    .show-card {
+    .card-show {
         width: 100%;
     }
 
@@ -187,6 +187,9 @@ body {
 
     .btns form {
         margin: 0;
+    }
+    .btns form button {
+        width: 100%;
     }
 
     .review-card {
