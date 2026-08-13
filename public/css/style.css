@@ -225,6 +225,9 @@ body {
      .new-listing-form .add-btn {
         width: 100%;
     }
+    .form-control{
+    width: 100% !important;
+    }
 
 
 
